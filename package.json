@@ -1,8 +1,8 @@
 {
-  "name": "@eyedea-sockets/json2tasks-jira",
+  "name": "@eyedea-sockets/jira-api",
   "version": "0.0.1",
   "description": "Description",
-  "repository": "https://github.com/eyedea-io/syncano-socket-json2tasks-jira.git",
+  "repository": "https://github.com/eyedea-io/syncano-socket-jira-api.git",
   "public": true,
   "author": "Eyedea <hello@eyedea.io> https://eyedea.io",
   "license": "MIT",
