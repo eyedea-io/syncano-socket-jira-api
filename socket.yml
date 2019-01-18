@@ -1,0 +1,18 @@
+name: jira-api
+description: parse json to jira taskst (story, views, copoments)
+
+endpoints:
+  createTask:
+    description: createTask
+
+config:
+  USER_EMAIL:
+    require: true
+    description: User account email
+  USER_API_TOKEN:
+    require: true
+    description: User api token (https://id.atlassian.com/manage-profile/security)
+  DOMAIN_NAME:
+    require: true
+    description: Company domain name
+
