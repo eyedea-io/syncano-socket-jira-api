@@ -46,12 +46,13 @@ class Endpoint extends S.Endpoint {
       })
     )
 
-    response.json(res)
+    return response.json(res)
   }
 
   endpointDidCatch(err: Error) {
     console.warn(err)
-    this.syncano.response.json({message: err.message})
+
+    return this.syncano.response.json({message: err.message}, 400)
   }
 }
 

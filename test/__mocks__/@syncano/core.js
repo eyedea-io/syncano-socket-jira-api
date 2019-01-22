@@ -1,14 +1,17 @@
 import merge from 'lodash.merge'
 import sinon from 'sinon'
+
+import {Core} from '@syncano/core'
 const Syncano = require.requireActual('@syncano/core')
 
 let syncanoStubbed = null
 let customMock = null
 
+
 if (syncanoStubbed) {
   syncanoStubbed.restore()
 } else {
-  syncanoStubbed = sinon.stub(Syncano, 'constructor')
+  syncanoStubbed = sinon.stub(Core, 'constructor')
     .callsFake(ctx => {
       let syncano = new Syncano(ctx)
       if (customMock) {
@@ -26,4 +29,5 @@ syncanoStubbed.__setMocks = (mocks) => {
   customMock = mocks
 }
 
-module.exports = syncanoStubbed
+Syncano.Core = syncanoStubbed
+module.exports = Syncano

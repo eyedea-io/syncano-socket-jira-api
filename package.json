@@ -1,6 +1,6 @@
 {
   "name": "@eyedea-sockets/jira-api",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Description",
   "repository": "https://github.com/eyedea-io/syncano-socket-jira-api.git",
   "public": true,

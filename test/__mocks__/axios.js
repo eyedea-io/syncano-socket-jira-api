@@ -1,2 +1,2 @@
-import axios from 'axios'
-export default axios
+const axios = require('axios')
+module.exports = axios
