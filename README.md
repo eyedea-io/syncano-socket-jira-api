@@ -40,6 +40,6 @@ const params = {
     }
   ]
 }
-const data = await s.post('<name>/<endpoint>', params)
+const data = await s.post('jira-api/createTesk', params)
 
 ```
